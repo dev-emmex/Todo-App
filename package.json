@@ -28,5 +28,11 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "globals": "^15.13.0",
     "vite": "^6.0.3"
-  }
+  },
+  "browserslist": [
+  "last 2 versions",
+  "not dead",
+  "supports es6-module"
+]
+
 }
