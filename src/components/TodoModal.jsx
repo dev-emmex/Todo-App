@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../utils/db';
 
 function TodoModal({ onClose }) {
@@ -17,6 +17,10 @@ function TodoModal({ onClose }) {
       console.error('Error adding todo:', error);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   return (
     <div className="modal-overlay">
